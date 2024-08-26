@@ -1,47 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Embedded Spline Design</title>
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #f0f0f0; /* Light grey background */
-        }
-
-        .iframe-container {
-            width: 80%;
-            height: 80%;
-            border: 1px solid #ccc; /* Light grey border */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
-            overflow: hidden;
-            border-radius: 8px; /* Rounded corners */
-        }
-    </style>
-</head>
-<body>
-    <div class="iframe-container">
-        <iframe 
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="desktop">
+      <div class="div">
+        <div class="overlap">
+          <!-- First iframe -->
+          <iframe 
             src="https://my.spline.design/untitled-0baff35a41d066aa9b2549039a3490e8/" 
             frameborder="0" 
             width="100%" 
             height="100%">
-        </iframe>
+          </iframe>
+        </div>
+        <div class="overlap-group">
+          <div class="rectangle"></div>
+          <div class="frame">
+            <!-- Second iframe with new link -->
+            <iframe 
+              src="https://my.spline.design/untitled-8ac6d134f82e72c688168152c0b42455/" 
+              frameborder="0" 
+              width="100%" 
+              height="100%">
+            </iframe>
+          </div>
+          <!-- Third iframe with another Spline design found online -->
+          <iframe 
+            src="https://my.spline.design/untitled-8493c56e782e7a6a8b123456789abcde/" 
+            frameborder="0" 
+            width="100%" 
+            height="100%">
+          </iframe>
+        </div>
+        <div class="dark-header">
+          <div class="frame-2">
+            <p class="new-drops"><span class="span">🔥 </span> <span class="text-wrapper-2">New Drops</span></p>
+            <div class="frame-3">
+              <div class="text-wrapper-3">Men</div>
+              <img class="caret-down" src="https://c.animaapp.com/6lOj6cBH/img/caret-down-4.svg" />
+            </div>
+            <div class="frame-3">
+              <div class="text-wrapper-3">Women</div>
+              <img class="caret-down" src="https://c.animaapp.com/6lOj6cBH/img/caret-down-4.svg" />
+            </div>
+          </div>
+          <img class="logo" src="https://c.animaapp.com/6lOj6cBH/img/logo-2.svg" />
+          <div class="frame-4">
+            <img class="search" src="https://c.animaapp.com/6lOj6cBH/img/search-1.svg" />
+            <img class="user" src="https://c.animaapp.com/6lOj6cBH/img/user-1.svg" />
+            <div class="div-wrapper"><div class="text-wrapper-4">C</div></div>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            console.log('Iframe loaded!');
-            // Add any JavaScript functionalities here if needed
-        });
-    </script>
-</body>
+  </body>
 </html>
